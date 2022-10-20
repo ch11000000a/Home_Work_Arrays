@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 //#define SHIFT_LEFT
 #define SHIFT_RIGHT
@@ -8,7 +8,7 @@ void main() {
 	int arr[size];
 	int arr_save[1];
 	int shift;
-	cout << "Ââåäèòå ìàññèâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < size; i++)
 	{
 		cin >> arr[i];
@@ -19,7 +19,7 @@ void main() {
 	}
 	cout << endl;
 #ifdef SHIFT_LEFT
-	cout << "Ââåäèòå íà ñëüêî ýëåìåíòîâ ñäâèíóòü ìàññèâ âëåâî: "; cin >> shift;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð° ÑÐ»ÑŒÐºÐ¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² ÑÐ´Ð²Ð¸Ð½ÑƒÑ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð² Ð²Ð»ÐµÐ²Ð¾: "; cin >> shift;
 	for (int i = 0; i < shift; i++)
 	{
 		arr_save[0] = arr[0];
@@ -31,11 +31,11 @@ void main() {
 	}
 #endif // SHIFT_LEFT
 #ifdef SHIFT_RIGHT
-	cout << "Ââåäèòå íà ñëüêî ýëåìåíòîâ ñäâèíóòü ìàññèâ âïðàâî: "; cin >> shift;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð° ÑÐ»ÑŒÐºÐ¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² ÑÐ´Ð²Ð¸Ð½ÑƒÑ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð² Ð²Ð¿Ñ€Ð°Ð²Ð¾: "; cin >> shift;
 	for (int i = 0; i < shift; i++)
 	{
 		arr_save[0] = arr[(size - 1)];
-		for (int i = (size - 1); i >= 0; i--)
+		for (int i = (size - 1); i >= 0; i--)  
 		{
 			arr[i] = arr[(i - 1)];
 		}
